@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Real Estate Finder</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Real Estate Finder</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="listings.html">Listings</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="help.html">Help</a>
+    </nav>
+  </header>
+
+  <section class="auth">
+    <button id="loginBtn">Login</button>
+    <button id="registerBtn">Register</button>
+  </section>
+
+  <section class="search">
+    <h2>Find Your Dream Home</h2>
+    <form id="searchForm">
+      <input type="text" id="locationInput" placeholder="Search by Location">
+      <input type="number" id="priceInput" placeholder="Search by Price">
+      <button type="submit">Search</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Real Estate Finder | All rights reserved.</p>
+  </footer>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeLogin">&times;</span>
+      <h3>Login</h3>
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <button>Login</button>
+    </div>
+  </div>
+
+  <!-- Register Modal -->
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeRegister">&times;</span>
+      <h3>Register</h3>
+      <input type="text" placeholder="Username">
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button>Register</button>
+    </div>
+  </div>
+</body>
+</html>
